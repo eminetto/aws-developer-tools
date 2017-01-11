@@ -9,9 +9,9 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t aws-developer-tools .
+      - docker build -t eminetto/aws-developer-tools .
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push aws-developer-tools
+      - docker push eminetto/aws-developer-tools
